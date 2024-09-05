@@ -5,3 +5,5 @@ export interface Announcement {
   link: string;
   title: string;
 }
+
+declare module "react-native-appdev-announcements";
