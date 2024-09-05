@@ -2,7 +2,7 @@ import AnnouncementView from "./AnnouncementView";
 import { useQuery } from "@tanstack/react-query";
 import { fetchAnnouncements } from "../services/api";
 import { useEffect, useState } from "react";
-import type { Announcement } from "../models/Announcement";
+import type { Announcement } from "../types";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   appearDelay,

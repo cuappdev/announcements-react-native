@@ -1,6 +1,6 @@
 {
   "name": "react-native-appdev-announcements",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "A React Native library for AppDev Announcements.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -185,7 +185,6 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.0.0",
     "@tanstack/react-query": "^5.54.1",
-    "@types/react-native": "^0.73.0",
     "axios": "^1.7.7",
     "react-native-svg": "^15.6.0"
   }
