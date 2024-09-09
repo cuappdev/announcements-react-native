@@ -1,12 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AnnouncementWrapper from "./AnnouncementWrapper";
-
-interface Props {
-  host: string;
-  appPath: string;
-  titleFontFamily?: string;
-  bodyFontFamily?: string;
-}
+import type { AnnouncementProps } from "../types";
 
 /**
  * Integrate AppDev Announcements to the application.
@@ -21,7 +15,7 @@ export default function AppDevAnnouncements({
   appPath,
   titleFontFamily,
   bodyFontFamily,
-}: Props) {
+}: AnnouncementProps) {
   const queryClient = new QueryClient();
 
   return (

@@ -2,7 +2,7 @@ import AnnouncementView from "./AnnouncementView";
 import { useQuery } from "@tanstack/react-query";
 import { fetchAnnouncements } from "../services/api";
 import { useEffect, useState } from "react";
-import type { Announcement } from "../types";
+import type { Announcement, AnnouncementProps } from "../types";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   appearDelay,
@@ -13,19 +13,12 @@ import {
 } from "../utils/constants";
 import { Linking } from "react-native";
 
-interface Props {
-  host: string;
-  appPath: string;
-  titleFontFamily?: string;
-  bodyFontFamily?: string;
-}
-
 export default function AnnouncementWrapper({
   host,
   appPath,
   titleFontFamily,
   bodyFontFamily,
-}: Props) {
+}: AnnouncementProps) {
   // MARK: States
   const announcementsQuery = useQuery<Announcement[]>({
     queryKey: [queryKey],
