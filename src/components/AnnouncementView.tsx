@@ -1,5 +1,6 @@
 import {
   Animated,
+  Dimensions,
   Image,
   Pressable,
   StyleSheet,
@@ -124,6 +125,7 @@ const styles = StyleSheet.create({
     top: 0,
   },
   container: {
+    width: Dimensions.get("window").width - 32,
     position: "absolute",
     top: 0,
     zIndex: 100,
