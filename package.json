@@ -1,9 +1,10 @@
 {
   "name": "react-native-appdev-announcements",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A React Native library for AppDev Announcements.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
+  "types": "./lib/typescript/commonjs/src/index.d.ts",
   "module": "./lib/module/index.js",
   "exports": {
     ".": {
