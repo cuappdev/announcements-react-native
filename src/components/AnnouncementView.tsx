@@ -100,16 +100,16 @@ export default function AnnouncementView({
             {body}
           </Text>
         </View>
-        <TouchableOpacity
-          style={styles.closeIcon}
-          onPress={() => {
-            setTimeout(closeAction, dismissDuration);
-            dismissAction();
-          }}
-        >
-          <CloseIcon />
-        </TouchableOpacity>
       </Pressable>
+      <TouchableOpacity
+        style={styles.closeIcon}
+        onPress={() => {
+          setTimeout(closeAction, dismissDuration);
+          dismissAction();
+        }}
+      >
+        <CloseIcon />
+      </TouchableOpacity>
     </Animated.View>
   );
 }
@@ -121,8 +121,8 @@ const styles = StyleSheet.create({
   },
   closeIcon: {
     position: "absolute",
-    right: 0,
-    top: 0,
+    right: 16,
+    top: 16,
   },
   container: {
     width: Dimensions.get("window").width - 32,
@@ -140,7 +140,6 @@ const styles = StyleSheet.create({
       height: 10,
     },
     padding: 16,
-    margin: 16,
     borderRadius: 4,
     borderColor: "#E5E6EA",
     borderWidth: 1,
