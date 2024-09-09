@@ -12,5 +12,3 @@ export interface AnnouncementProps {
   titleFontFamily?: string;
   bodyFontFamily?: string;
 }
-
-declare module "react-native-appdev-announcements";
