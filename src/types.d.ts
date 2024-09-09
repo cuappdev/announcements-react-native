@@ -6,4 +6,11 @@ export interface Announcement {
   title: string;
 }
 
+export interface AnnouncementProps {
+  host: string;
+  appPath: string;
+  titleFontFamily?: string;
+  bodyFontFamily?: string;
+}
+
 declare module "react-native-appdev-announcements";
