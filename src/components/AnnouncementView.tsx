@@ -127,6 +127,7 @@ const styles = StyleSheet.create({
   container: {
     width: Dimensions.get("window").width - 32,
     position: "absolute",
+    left: 16,
     top: 0,
     zIndex: 100,
     flexDirection: "row",
